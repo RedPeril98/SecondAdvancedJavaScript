@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошачий приют и отзывы</title>
+    <style>
+        #reviews-container {
+            margin-top: 20px;
+        }
+        .review {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Отзывы о приюте "Лапа-Лапа"</h1>
+    <form id="reviewForm">
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="review">Ваш отзыв:</label><br>
+        <textarea id="review" name="review" rows="4" cols="50" required></textarea><br>
+        <button type="submit">Отправить</button>
+    </form>
+    <div id="reviewsContainer">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
